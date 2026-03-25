@@ -17,7 +17,6 @@ import Header from './components/Header/Header';
 import Settings from './components/Settings/Settings';
 import Forgot from './components/Password/Forgot'
 import Reset from './components/Password/Reset'
-import Reactpage from './components//Reactpage/Reactpage'
 
 function App() {
 
@@ -41,7 +40,6 @@ function App() {
           <Route path="/customers" exact component={ClientList} />
           <Route path="/forgot" exact component={Forgot} />
           <Route path="/reset/:token" exact component={Reset} />
-          <Route path="/reactpage" exact component={Reactpage} />
           <Redirect exact from="/new-invoice" to="/invoice" />
 
         </Switch>
